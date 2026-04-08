@@ -7,11 +7,11 @@ interface NavbarProps {
 }
 
 const links = {
-  en: ["About", "Classes", "Pricing", "Contact"],
-  zh: ["关于", "课程", "价格", "联系"],
+  en: ["About", "Classes", "Pricing", "Reviews", "Contact"],
+  zh: ["关于", "课程", "价格", "评价", "联系"],
 };
 
-const ids = ["about", "classes", "pricing", "contact"];
+const ids = ["about", "classes", "pricing", "reviews", "contact"];
 
 const Navbar = ({ lang, onToggleLang }: NavbarProps) => {
   const [open, setOpen] = useState(false);
@@ -20,7 +20,7 @@ const Navbar = ({ lang, onToggleLang }: NavbarProps) => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/90 backdrop-blur-md border-b border-border">
       <div className="container flex items-center justify-between h-16">
         <a href="#" className="font-serif text-xl font-bold text-primary">
-          严老师 <span className="text-sm font-sans font-normal text-muted-foreground">Yan Laoshi</span>
+          {lang === "en" ? "Yan Mandarin Studio" : "严老师中文工作室"}
         </a>
 
         <div className="hidden md:flex items-center gap-6">

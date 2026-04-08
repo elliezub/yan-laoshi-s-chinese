@@ -7,20 +7,20 @@ interface ClassesProps {
 const content = {
   en: {
     title: "Classes",
-    subtitle: "Lessons designed around you — focused on speaking and real-life communication.",
+    subtitle: "Every lesson is built around you — focused on real speaking and practical outcomes.",
     cards: [
-      { icon: Target, title: "Beginner", desc: "Start from zero. Learn pronunciation, basic grammar, and everyday phrases through guided conversation." },
-      { icon: MessageCircle, title: "Intermediate", desc: "Expand your vocabulary and fluency. Practice discussions on daily life, travel, and culture." },
-      { icon: Sparkles, title: "Advanced", desc: "Refine your expression. Discuss news, literature, and complex topics with natural flow." },
+      { icon: Target, title: "Beginner", desc: "Start speaking simple Mandarin quickly. Master tones, pronunciation, and key everyday phrases through guided conversation." },
+      { icon: MessageCircle, title: "Intermediate", desc: "Hold longer, more natural conversations. Discuss daily life, travel, and culture with growing confidence and fluency." },
+      { icon: Sparkles, title: "Advanced", desc: "Discuss complex topics like news, culture, and history naturally. Refine your expression and speak with ease." },
     ],
   },
   zh: {
     title: "课程介绍",
-    subtitle: "围绕您设计的课程 — 专注于口语和真实交流。",
+    subtitle: "每节课都围绕您设计 — 专注于真实口语和实际成果。",
     cards: [
-      { icon: Target, title: "初级", desc: "从零开始。通过引导对话学习发音、基础语法和日常用语。" },
-      { icon: MessageCircle, title: "中级", desc: "扩展词汇和流利度。练习日常生活、旅行和文化话题的讨论。" },
-      { icon: Sparkles, title: "高级", desc: "精炼表达能力。用自然的方式讨论新闻、文学和复杂话题。" },
+      { icon: Target, title: "初级", desc: "快速开口说简单中文。通过引导对话掌握声调、发音和关键日常用语。" },
+      { icon: MessageCircle, title: "中级", desc: "进行更长、更自然的对话。自信流利地讨论日常生活、旅行和文化话题。" },
+      { icon: Sparkles, title: "高级", desc: "自然地讨论新闻、文化和历史等复杂话题。精炼表达，轻松自如地交流。" },
     ],
   },
 };

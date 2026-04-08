@@ -7,8 +7,8 @@ interface AboutProps {
 
 const content = {
   en: {
-    title: "About Yan Laoshi",
-    description: "With 4 years of dedicated teaching experience, I help students at all levels — from complete beginners to advanced learners — build confidence in speaking Mandarin Chinese.",
+    title: "About Yan Mandarin Studio",
+    description: "With 4 years of dedicated teaching experience — in both classroom settings and private one-on-one sessions — I help students from all backgrounds and levels build real confidence in speaking Mandarin Chinese.",
     features: [
       { icon: BookOpen, label: "4 Years Teaching", desc: "Helping students speak with confidence" },
       { icon: Users, label: "All Levels Welcome", desc: "Beginner, intermediate, and advanced" },
@@ -17,8 +17,8 @@ const content = {
     ],
   },
   zh: {
-    title: "关于严老师",
-    description: "我有4年的教学经验，帮助各级别的学生——从零基础到高级学习者——建立说中文的信心。",
+    title: "关于严老师中文工作室",
+    description: "我拥有4年教学经验——包括课堂教学和一对一私人辅导——帮助来自不同背景和水平的学生建立起说中文的真正信心。",
     features: [
       { icon: BookOpen, label: "4年教学经验", desc: "帮助学生自信地说中文" },
       { icon: Users, label: "欢迎各级别", desc: "初级、中级和高级" },
