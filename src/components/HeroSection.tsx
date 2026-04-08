@@ -6,16 +6,18 @@ interface HeroProps {
 
 const content = {
   en: {
-    name: "Yan Laoshi 严老师",
-    subtitle: "Chinese Language Teacher",
-    tagline: "Learn Mandarin through real conversation — speak with confidence from day one.",
-    cta: "Book a Free 30-Minute Chat",
+    name: "Yan Mandarin Studio",
+    subtitle: "Learn Mandarin through real conversation. Speak with confidence from day one.",
+    subline: "Lessons focus on speaking first, not memorization.",
+    cta1: "Book Your Trial",
+    cta2: "Schedule a Session",
   },
   zh: {
-    name: "严老师 Yan Laoshi",
-    subtitle: "中文老师",
-    tagline: "通过真实对话学习中文 — 从第一天起就自信地开口说。",
-    cta: "预约免费30分钟试听课",
+    name: "严老师中文工作室",
+    subtitle: "通过真实对话学习中文。从第一天起就自信地开口说。",
+    subline: "课程以口语为先，而非死记硬背。",
+    cta1: "预约试听课",
+    cta2: "安排课程",
   },
 };
 
@@ -31,18 +33,26 @@ const HeroSection = ({ lang }: HeroProps) => {
         <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground animate-fade-in-up leading-tight">
           {t.name}
         </h1>
-        <p className="mt-3 text-lg md:text-xl text-primary-foreground/90 font-sans font-medium animate-fade-in-up-delay">
+        <p className="mt-4 text-lg md:text-xl text-primary-foreground/90 font-sans font-medium animate-fade-in-up-delay leading-relaxed">
           {t.subtitle}
         </p>
-        <p className="mt-4 text-base md:text-lg text-primary-foreground/80 font-sans animate-fade-in-up-delay">
-          {t.tagline}
+        <p className="mt-2 text-base md:text-lg text-primary-foreground/70 font-sans italic animate-fade-in-up-delay">
+          {t.subline}
         </p>
-        <a
-          href="#contact"
-          className="inline-block mt-8 px-8 py-3 rounded-lg bg-primary-foreground text-primary font-semibold text-base hover:bg-primary-foreground/90 transition-all shadow-lg animate-fade-in-up-delay-2"
-        >
-          {t.cta}
-        </a>
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up-delay-2">
+          <a
+            href="#contact"
+            className="inline-block px-8 py-3 rounded-lg bg-primary-foreground text-primary font-semibold text-base hover:bg-primary-foreground/90 transition-all shadow-lg"
+          >
+            {t.cta1}
+          </a>
+          <a
+            href="#pricing"
+            className="inline-block px-8 py-3 rounded-lg border-2 border-primary-foreground text-primary-foreground font-semibold text-base hover:bg-primary-foreground/10 transition-all"
+          >
+            {t.cta2}
+          </a>
+        </div>
       </div>
     </section>
   );

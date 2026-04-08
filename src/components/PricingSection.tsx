@@ -7,14 +7,14 @@ interface PricingProps {
 const content = {
   en: {
     title: "Simple Pricing",
-    trial: { label: "Free Trial", price: "$0", duration: "30 minutes", desc: "Get to know each other and discuss your learning goals.", features: ["No commitment", "Personalized assessment", "Custom learning plan"] },
-    regular: { label: "Regular Lessons", price: "$15", duration: "per hour", desc: "Ongoing one-on-one conversation-based lessons.", features: ["Flexible scheduling", "Personalized curriculum", "Homework & resources", "Progress tracking"] },
+    trial: { label: "Free Trial", price: "$0", duration: "30 minutes", desc: "A relaxed conversation to understand your goals and create your learning plan.", features: ["No commitment", "Personalized assessment", "Custom learning plan"] },
+    regular: { label: "One-on-One Lessons", price: "$15", duration: "per hour", desc: "Private, conversation-focused lessons tailored to your level and interests.", features: ["Flexible scheduling", "Personalized curriculum", "Homework & resources", "Progress tracking"] },
     cta: "Book Now",
   },
   zh: {
     title: "简单透明的价格",
-    trial: { label: "免费试听", price: "$0", duration: "30分钟", desc: "互相了解，讨论您的学习目标。", features: ["无需承诺", "个性化评估", "定制学习计划"] },
-    regular: { label: "常规课程", price: "$15", duration: "每小时", desc: "持续的一对一对话式课程。", features: ["灵活安排时间", "个性化课程", "作业和资源", "进度跟踪"] },
+    trial: { label: "免费试听", price: "$0", duration: "30分钟", desc: "轻松对话，了解您的目标并制定学习计划。", features: ["无需承诺", "个性化评估", "定制学习计划"] },
+    regular: { label: "一对一课程", price: "$15", duration: "每小时", desc: "针对您的水平和兴趣量身定制的对话式私人课程。", features: ["灵活安排时间", "个性化课程", "作业和资源", "进度跟踪"] },
     cta: "立即预约",
   },
 };
