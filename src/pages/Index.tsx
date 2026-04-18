@@ -7,6 +7,7 @@ import PricingSection from "@/components/PricingSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactSection from "@/components/ContactSection";
 import CtaSection from "@/components/CtaSection";
+import VideoSection from "@/components/VideoSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -17,6 +18,7 @@ const Index = () => {
       <Navbar lang={lang} onToggleLang={() => setLang(lang === "en" ? "zh" : "en")} />
       <HeroSection lang={lang} />
       <AboutSection lang={lang} />
+      <VideoSection lang={lang} />
       <ClassesSection lang={lang} />
       <PricingSection lang={lang} />
       <TestimonialsSection lang={lang} />
