@@ -41,13 +41,13 @@ const PricingSection = ({ lang }: PricingProps) => {
                 </li>
               ))}
             </ul>
-            <a href="#contact" className="block mt-6 py-2.5 rounded-lg border-2 border-primary text-primary font-semibold text-sm hover:bg-primary hover:text-primary-foreground transition-colors">
+            <a href="#contact" className="mt-6 inline-flex items-center justify-center w-full py-2.5 rounded-lg border-2 border-primary bg-background text-primary font-semibold text-sm hover:bg-primary hover:text-primary-foreground transition-colors">
               {t.cta}
             </a>
           </div>
 
           {/* Regular */}
-          <div className="bg-primary rounded-xl p-8 border border-primary shadow-lg text-primary-foreground">
+          <div className="bg-primary rounded-xl p-8 border border-primary shadow-lg text-primary-foreground flex flex-col">
             <p className="text-sm font-semibold uppercase tracking-wide opacity-90">{t.regular.label}</p>
             <p className="mt-4 text-4xl font-bold">{t.regular.price}</p>
             <p className="text-sm opacity-80">{t.regular.duration}</p>
@@ -59,7 +59,7 @@ const PricingSection = ({ lang }: PricingProps) => {
                 </li>
               ))}
             </ul>
-            <a href="#contact" className="block mt-6 py-2.5 rounded-lg bg-primary-foreground text-primary font-semibold text-sm hover:bg-primary-foreground/90 transition-colors">
+            <a href="#contact" className="mt-6 inline-flex items-center justify-center w-full py-2.5 rounded-lg bg-primary-foreground text-primary font-semibold text-sm hover:bg-primary-foreground/90 transition-colors">
               {t.cta}
             </a>
           </div>
