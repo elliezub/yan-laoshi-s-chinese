@@ -29,7 +29,7 @@ const PricingSection = ({ lang }: PricingProps) => {
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Trial */}
-          <div className="bg-card rounded-xl p-8 border border-border shadow-sm">
+          <div className="bg-card rounded-xl p-8 border border-border shadow-sm flex flex-col">
             <p className="text-sm font-semibold text-primary uppercase tracking-wide">{t.trial.label}</p>
             <p className="mt-4 text-4xl font-bold text-foreground">{t.trial.price}</p>
             <p className="text-muted-foreground text-sm">{t.trial.duration}</p>
