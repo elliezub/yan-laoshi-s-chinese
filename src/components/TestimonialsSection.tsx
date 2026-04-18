@@ -45,8 +45,8 @@ const TestimonialsSection = ({ lang }: TestimonialsProps) => {
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">{t.title}</h2>
 
         {/* Mobile: carousel */}
-        <div className="md:hidden">
-          <Carousel opts={{ loop: true }} className="w-full max-w-sm mx-auto">
+        <div className="md:hidden px-12">
+          <Carousel opts={{ loop: true }} className="w-full">
             <CarouselContent>
               {t.reviews.map((review, i) => (
                 <CarouselItem key={i}>
@@ -54,8 +54,8 @@ const TestimonialsSection = ({ lang }: TestimonialsProps) => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="-left-10" />
+            <CarouselNext className="-right-10" />
           </Carousel>
         </div>
 

@@ -7,8 +7,8 @@ interface AboutProps {
 
 const content = {
   en: {
-    title: "About Yan Mandarin Studio",
-    description: "With 4 years of dedicated teaching experience — in both classroom settings and private one-on-one sessions — I help students from all backgrounds and levels build real confidence in speaking Mandarin Chinese.",
+    title: "Meet Yan Zhengyu (严正宇)",
+    description: "Hi, I'm Yan Zhengyu — most students just call me Yan. With 4 years of dedicated teaching experience across both classroom settings and private one-on-one sessions, I help students from all backgrounds and levels build real confidence in speaking Mandarin Chinese.",
     features: [
       { icon: BookOpen, label: "4 Years Teaching", desc: "Helping students speak with confidence" },
       { icon: Users, label: "All Levels Welcome", desc: "Beginner, intermediate, and advanced" },
@@ -17,8 +17,8 @@ const content = {
     ],
   },
   zh: {
-    title: "关于严老师中文工作室",
-    description: "我拥有4年教学经验——包括课堂教学和一对一私人辅导——帮助来自不同背景和水平的学生建立起说中文的真正信心。",
+    title: "认识严正宇老师",
+    description: "您好，我是严正宇——学生们都叫我严老师。我拥有4年教学经验，涵盖课堂教学和一对一私人辅导，帮助来自不同背景和水平的学生建立起说中文的真正信心。",
     features: [
       { icon: BookOpen, label: "4年教学经验", desc: "帮助学生自信地说中文" },
       { icon: Users, label: "欢迎各级别", desc: "初级、中级和高级" },

@@ -6,14 +6,14 @@ interface HeroProps {
 
 const content = {
   en: {
-    name: "Yan Mandarin Studio",
+    name: "Learn Chinese with Yan",
     subtitle: "Learn Mandarin through real conversation. Speak with confidence from day one.",
     subline: "Lessons focus on speaking first, not memorization.",
     cta1: "Book Your Trial",
     cta2: "Schedule a Session",
   },
   zh: {
-    name: "严老师中文工作室",
+    name: "跟严老师学中文",
     subtitle: "通过真实对话学习中文。从第一天起就自信地开口说。",
     subline: "课程以口语为先，而非死记硬背。",
     cta1: "预约试听课",

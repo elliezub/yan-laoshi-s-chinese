@@ -7,6 +7,29 @@ interface ContactProps {
 
 const RECIPIENT = "yzy960826@gmail.com";
 
+const TIMEZONES = [
+  "(UTC-12:00) Baker Island",
+  "(UTC-10:00) Hawaii",
+  "(UTC-08:00) Pacific Time (US & Canada)",
+  "(UTC-07:00) Mountain Time (US & Canada)",
+  "(UTC-06:00) Central Time (US & Canada)",
+  "(UTC-05:00) Eastern Time (US & Canada)",
+  "(UTC-04:00) Atlantic Time",
+  "(UTC-03:00) Buenos Aires",
+  "(UTC+00:00) London, Dublin",
+  "(UTC+01:00) Paris, Berlin, Madrid",
+  "(UTC+02:00) Athens, Cairo",
+  "(UTC+03:00) Moscow, Istanbul",
+  "(UTC+04:00) Dubai",
+  "(UTC+05:00) Karachi",
+  "(UTC+05:30) India",
+  "(UTC+07:00) Bangkok, Jakarta",
+  "(UTC+08:00) Beijing, Singapore, Hong Kong",
+  "(UTC+09:00) Tokyo, Seoul",
+  "(UTC+10:00) Sydney",
+  "(UTC+12:00) Auckland",
+];
+
 const content = {
   en: {
     title: "Book Your Free Trial",
@@ -15,6 +38,7 @@ const content = {
     email: "Email Address",
     level: "Your Chinese Level",
     levels: ["Complete Beginner", "Beginner", "Intermediate", "Advanced"],
+    timezone: "Your Time Zone",
     message: "Tell me about your goals",
     submit: "Send Message",
     success: "Thank you! Your email app should have opened — just hit send and I'll be in touch soon.",
@@ -28,6 +52,7 @@ const content = {
     email: "电子邮箱",
     level: "您的中文水平",
     levels: ["零基础", "初级", "中级", "高级"],
+    timezone: "您的时区",
     message: "告诉我您的学习目标",
     submit: "发送消息",
     success: "谢谢！您的邮件应用应已打开——点击发送即可，我会尽快联系您。",
@@ -39,7 +64,7 @@ const content = {
 const ContactSection = ({ lang }: ContactProps) => {
   const t = content[lang];
   const [submitted, setSubmitted] = useState(false);
-  const [form, setForm] = useState({ name: "", email: "", level: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", level: "", timezone: "", message: "" });
 
   const update = (k: keyof typeof form) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) =>
     setForm({ ...form, [k]: e.target.value });
@@ -47,7 +72,7 @@ const ContactSection = ({ lang }: ContactProps) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const subject = `${t.subjectPrefix} ${form.name}`;
-    const body = `${t.name}: ${form.name}\n${t.email}: ${form.email}\n${t.level}: ${form.level}\n\n${t.message}:\n${form.message}`;
+    const body = `${t.name}: ${form.name}\n${t.email}: ${form.email}\n${t.level}: ${form.level}\n${t.timezone}: ${form.timezone}\n\n${t.message}:\n${form.message}`;
     window.location.href = `mailto:${RECIPIENT}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     setSubmitted(true);
   };
@@ -77,6 +102,13 @@ const ContactSection = ({ lang }: ContactProps) => {
               <select required value={form.level} onChange={update("level")} className="w-full px-4 py-2.5 rounded-lg border border-input bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ring">
                 <option value="" disabled>{t.selectPlaceholder}</option>
                 {t.levels.map((l, i) => <option key={i} value={l}>{l}</option>)}
+              </select>
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-foreground mb-1.5">{t.timezone}</label>
+              <select required value={form.timezone} onChange={update("timezone")} className="w-full px-4 py-2.5 rounded-lg border border-input bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ring">
+                <option value="" disabled>{t.selectPlaceholder}</option>
+                {TIMEZONES.map((tz) => <option key={tz} value={tz}>{tz}</option>)}
               </select>
             </div>
             <div>
