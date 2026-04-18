@@ -1,4 +1,4 @@
-import bambooImg from "@/assets/bamboo-accent.jpg";
+import yanPortrait from "@/assets/yan-portrait.jpg";
 import { BookOpen, Globe, History, Users } from "lucide-react";
 
 interface AboutProps {
@@ -49,7 +49,7 @@ const AboutSection = ({ lang }: AboutProps) => {
             </div>
           </div>
           <div className="flex justify-center">
-            <img src={bambooImg} alt="Chinese bamboo painting" loading="lazy" width={600} height={800} className="rounded-2xl shadow-xl max-h-[500px] object-cover" />
+            <img src={yanPortrait} alt="Yan Laoshi, Mandarin teacher" loading="lazy" width={600} height={600} className="rounded-2xl shadow-xl max-h-[500px] w-full max-w-md object-cover" />
           </div>
         </div>
       </div>

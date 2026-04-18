@@ -1,4 +1,5 @@
 import { Quote } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 interface TestimonialsProps {
   lang: "en" | "zh";
@@ -27,6 +28,14 @@ const content = {
   },
 };
 
+const ReviewCard = ({ quote, name }: { quote: string; name: string }) => (
+  <div className="bg-card rounded-xl p-6 border border-border shadow-sm h-full">
+    <Quote className="w-5 h-5 text-primary/40 mb-3" />
+    <p className="text-foreground text-sm leading-relaxed mb-4">"{quote}"</p>
+    <p className="text-sm font-semibold text-primary">— {name}</p>
+  </div>
+);
+
 const TestimonialsSection = ({ lang }: TestimonialsProps) => {
   const t = content[lang];
 
@@ -35,24 +44,33 @@ const TestimonialsSection = ({ lang }: TestimonialsProps) => {
       <div className="container max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">{t.title}</h2>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {t.reviews.slice(0, 3).map((review, i) => (
-            <div key={i} className="bg-card rounded-xl p-6 border border-border shadow-sm">
-              <Quote className="w-5 h-5 text-primary/40 mb-3" />
-              <p className="text-foreground text-sm leading-relaxed mb-4">"{review.quote}"</p>
-              <p className="text-sm font-semibold text-primary">— {review.name}</p>
-            </div>
-          ))}
+        {/* Mobile: carousel */}
+        <div className="md:hidden">
+          <Carousel opts={{ loop: true }} className="w-full max-w-sm mx-auto">
+            <CarouselContent>
+              {t.reviews.map((review, i) => (
+                <CarouselItem key={i}>
+                  <ReviewCard {...review} />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 mt-6 max-w-3xl mx-auto">
-          {t.reviews.slice(3).map((review, i) => (
-            <div key={i} className="bg-card rounded-xl p-6 border border-border shadow-sm">
-              <Quote className="w-5 h-5 text-primary/40 mb-3" />
-              <p className="text-foreground text-sm leading-relaxed mb-4">"{review.quote}"</p>
-              <p className="text-sm font-semibold text-primary">— {review.name}</p>
-            </div>
-          ))}
+        {/* Desktop: grid */}
+        <div className="hidden md:block">
+          <div className="grid md:grid-cols-3 gap-6">
+            {t.reviews.slice(0, 3).map((review, i) => (
+              <ReviewCard key={i} {...review} />
+            ))}
+          </div>
+          <div className="grid md:grid-cols-2 gap-6 mt-6 max-w-3xl mx-auto">
+            {t.reviews.slice(3).map((review, i) => (
+              <ReviewCard key={i} {...review} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
