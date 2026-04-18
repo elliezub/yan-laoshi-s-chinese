@@ -1,4 +1,4 @@
-import { MessageCircle, Target, Sparkles } from "lucide-react";
+import { MessageCircle, GraduationCap, Globe2 } from "lucide-react";
 
 interface ClassesProps {
   lang: "en" | "zh";
@@ -7,20 +7,20 @@ interface ClassesProps {
 const content = {
   en: {
     title: "Classes",
-    subtitle: "Every lesson is built around you — focused on real speaking and practical outcomes.",
+    subtitle: "Stop studying Mandarin. Start speaking it.",
     cards: [
-      { icon: Target, title: "Beginner", desc: "Start speaking simple Mandarin quickly. Master tones, pronunciation, and key everyday phrases through guided conversation." },
-      { icon: MessageCircle, title: "Intermediate", desc: "Hold longer, more natural conversations. Discuss daily life, travel, and culture with growing confidence and fluency." },
-      { icon: Sparkles, title: "Advanced", desc: "Discuss complex topics like news, culture, and history naturally. Refine your expression and speak with ease." },
+      { icon: MessageCircle, title: "Conversation Classes", desc: "Speak naturally from day one. Every lesson is built around real dialogue, practical topics, and building the confidence to actually use Mandarin in the real world." },
+      { icon: GraduationCap, title: "HSK Exam Prep", desc: "Structured lessons designed around the HSK framework. Work through vocabulary, grammar, and listening skills systematically to hit your target score." },
+      { icon: Globe2, title: "Culture & Travel", desc: "Go beyond the phrasebook. Explore Chinese history, traditions, food, and travel vocabulary through conversation, so you're ready for the real thing." },
     ],
   },
   zh: {
     title: "课程介绍",
-    subtitle: "每节课都围绕您设计 — 专注于真实口语和实际成果。",
+    subtitle: "别再死记硬背，开口说中文。",
     cards: [
-      { icon: Target, title: "初级", desc: "快速开口说简单中文。通过引导对话掌握声调、发音和关键日常用语。" },
-      { icon: MessageCircle, title: "中级", desc: "进行更长、更自然的对话。自信流利地讨论日常生活、旅行和文化话题。" },
-      { icon: Sparkles, title: "高级", desc: "自然地讨论新闻、文化和历史等复杂话题。精炼表达，轻松自如地交流。" },
+      { icon: MessageCircle, title: "口语对话课", desc: "从第一天起就自然开口。每节课围绕真实对话、实用话题展开，建立在现实生活中使用中文的信心。" },
+      { icon: GraduationCap, title: "HSK 考试备考", desc: "围绕 HSK 框架设计的系统课程。系统性提升词汇、语法和听力，助您达成目标分数。" },
+      { icon: Globe2, title: "文化与旅行", desc: "超越短语手册。通过对话探索中国历史、传统、美食和旅行词汇，为真实的中国之旅做好准备。" },
     ],
   },
 };
