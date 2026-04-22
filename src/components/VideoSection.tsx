@@ -9,7 +9,7 @@ const content = {
   },
   zh: {
     title: "认识您的老师",
-    subtitle: "观看严老师的简短介绍。",
+    subtitle: "观看闫老师的简短介绍。",
   },
 };
 
