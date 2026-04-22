@@ -40,7 +40,7 @@ const TestimonialsSection = ({ lang }: TestimonialsProps) => {
   const t = content[lang];
 
   return (
-    <section id="reviews" className="py-20 bg-secondary/30">
+    <section id="reviews" className="py-20 bg-section-b">
       <div className="container max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">{t.title}</h2>
 

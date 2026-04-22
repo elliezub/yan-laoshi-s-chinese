@@ -25,7 +25,7 @@ const PricingSection = ({ lang }: PricingProps) => {
   const t = content[lang];
 
   return (
-    <section id="pricing" className="py-20 bg-background">
+    <section id="pricing" className="py-20 bg-section-a">
       <div className="container max-w-6xl text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12">{t.title}</h2>
 

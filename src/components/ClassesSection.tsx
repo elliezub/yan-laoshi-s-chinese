@@ -29,7 +29,7 @@ const ClassesSection = ({ lang }: ClassesProps) => {
   const t = content[lang];
 
   return (
-    <section id="classes" className="py-20 bg-secondary/30">
+    <section id="classes" className="py-20 bg-section-c">
       <div className="container max-w-5xl text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">{t.title}</h2>
         <p className="text-muted-foreground text-lg mb-12 max-w-2xl mx-auto">{t.subtitle}</p>
