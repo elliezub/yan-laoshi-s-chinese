@@ -25,7 +25,7 @@ const HeroSection = ({ lang }: HeroProps) => {
   const t = content[lang];
 
   return (
-    <section className="relative min-h-screen md:min-h-[90vh] flex items-center justify-center overflow-hidden pt-16 pb-12 md:pt-0 md:pb-0">
+    <section className="relative min-h-[calc(100svh-4rem)] md:min-h-[90vh] mt-16 md:mt-0 flex items-center justify-center overflow-hidden py-8 md:py-0">
       <img src={heroImg} alt="Chinese mountain landscape" className="absolute inset-0 w-full h-full object-cover" width={1920} height={800} />
       <div className="absolute inset-0" style={{ background: "var(--hero-overlay)" }} />
 
