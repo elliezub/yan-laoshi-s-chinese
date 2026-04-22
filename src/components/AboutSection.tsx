@@ -62,9 +62,18 @@ const AboutSection = ({ lang }: AboutProps) => {
   return (
     <section id="about" className="py-20 bg-background">
       <div className="container max-w-6xl">
+        <h2 className="md:hidden text-3xl font-bold text-foreground mb-6">{t.title}</h2>
+        <img
+          src={yanPortrait}
+          alt="Yan Laoshi, Mandarin teacher"
+          loading="lazy"
+          width={600}
+          height={600}
+          className="md:hidden rounded-2xl shadow-xl w-full max-w-md mx-auto object-cover mb-8"
+        />
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">{t.title}</h2>
+            <h2 className="hidden md:block text-4xl font-bold text-foreground mb-6">{t.title}</h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">{t.description}</p>
             <div className="grid grid-cols-2 gap-4">
               {t.features.map((f, i) => (
@@ -76,7 +85,7 @@ const AboutSection = ({ lang }: AboutProps) => {
               ))}
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="hidden md:flex justify-center">
             <img
               src={yanPortrait}
               alt="Yan Laoshi, Mandarin teacher"
