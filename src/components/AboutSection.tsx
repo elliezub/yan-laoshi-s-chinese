@@ -97,26 +97,6 @@ const AboutSection = ({ lang }: AboutProps) => {
           </div>
         </div>
 
-        <div className="mt-16 max-w-3xl mx-auto">
-          <h3 className="text-2xl font-bold text-foreground mb-6 text-center">{t.eduTitle}</h3>
-          <div className="space-y-4">
-            {t.education.map((e, i) => (
-              <div
-                key={i}
-                className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 p-5 rounded-lg bg-secondary/40 border border-border"
-              >
-                <div className="flex items-center gap-3 sm:w-44 flex-shrink-0">
-                  <GraduationCap className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="font-semibold text-sm text-foreground">{e.years}</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-foreground">{e.school}</p>
-                  <p className="text-sm text-muted-foreground">{e.degree}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
