@@ -13,7 +13,7 @@ const content = {
     cta2: "Schedule a Session",
   },
   zh: {
-    name: "跟严老师学中文",
+    name: "跟闫老师学中文",
     subtitle: "通过真实对话学习中文。从第一天起就自信地开口说。",
     subline: "课程以口语为先，而非死记硬背。",
     cta1: "预约试听课",
@@ -25,7 +25,7 @@ const HeroSection = ({ lang }: HeroProps) => {
   const t = content[lang];
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen md:min-h-[90vh] flex items-center justify-center overflow-hidden pt-16 pb-12 md:pt-0 md:pb-0">
       <img src={heroImg} alt="Chinese mountain landscape" className="absolute inset-0 w-full h-full object-cover" width={1920} height={800} />
       <div className="absolute inset-0" style={{ background: "var(--hero-overlay)" }} />
 
