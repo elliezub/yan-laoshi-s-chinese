@@ -37,7 +37,7 @@ const ContactSection = ({ lang }: ContactProps) => {
   const t = content[lang];
 
   return (
-    <section id="contact" className="py-20 bg-accent/40">
+    <section id="contact" className="py-20 bg-section-c">
       <div className="container max-w-2xl">
         <div className="relative overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
           <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />

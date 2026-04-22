@@ -52,6 +52,9 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         gold: "hsl(var(--gold-accent))",
+        "section-a": "hsl(var(--section-a))",
+        "section-b": "hsl(var(--section-b))",
+        "section-c": "hsl(var(--section-c))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

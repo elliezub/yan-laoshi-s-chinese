@@ -17,7 +17,7 @@ const VideoSection = ({ lang }: VideoProps) => {
   const t = content[lang];
 
   return (
-    <section className="py-20 bg-muted/50">
+    <section className="py-20 bg-section-b">
       <div className="container max-w-3xl text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">{t.title}</h2>
         <p className="text-muted-foreground mb-8">{t.subtitle}</p>

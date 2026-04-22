@@ -60,7 +60,7 @@ const AboutSection = ({ lang }: AboutProps) => {
   const t = content[lang];
 
   return (
-    <section id="about" className="py-20 bg-background">
+    <section id="about" className="py-20 bg-section-a">
       <div className="container max-w-6xl">
         <h2 className="md:hidden text-3xl font-bold text-foreground mb-6">{t.title}</h2>
         <img
