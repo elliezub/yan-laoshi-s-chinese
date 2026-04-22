@@ -36,9 +36,6 @@ const HeroSection = ({ lang }: HeroProps) => {
         <p className="mt-4 text-lg md:text-xl text-primary-foreground/90 font-sans font-medium animate-fade-in-up-delay leading-relaxed">
           {t.subtitle}
         </p>
-        <p className="mt-2 text-base md:text-lg text-primary-foreground/70 font-sans italic animate-fade-in-up-delay">
-          {t.subline}
-        </p>
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up-delay-2">
           <a
             href="#contact"
