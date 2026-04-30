@@ -7,7 +7,7 @@ interface ClassesProps {
 const content = {
   en: {
     title: "Classes",
-    subtitle: "Stop studying Mandarin. Start speaking it.",
+    subtitle: "Don't just study Mandarin, start speaking it now.",
     cards: [
       { icon: MessageCircle, title: "Conversation Classes", desc: "Speak naturally from day one. Every lesson is built around real dialogue, practical topics, and building the confidence to actually use Mandarin in the real world." },
       { icon: GraduationCap, title: "HSK Exam Prep", desc: "Structured lessons designed around the HSK framework. Work through vocabulary, grammar, and listening skills systematically to hit your target score." },
@@ -16,7 +16,7 @@ const content = {
   },
   zh: {
     title: "课程介绍",
-    subtitle: "别再死记硬背，开口说中文。",
+    subtitle: "不要只学中文，现在就开口说。",
     cards: [
       { icon: MessageCircle, title: "口语对话课", desc: "从第一天起就自然开口。每节课围绕真实对话、实用话题展开，建立在现实生活中使用中文的信心。" },
       { icon: GraduationCap, title: "HSK 考试备考", desc: "围绕 HSK 框架设计的系统课程。系统性提升词汇、语法和听力，助您达成目标分数。" },
