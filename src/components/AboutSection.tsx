@@ -9,7 +9,7 @@ const content = {
   en: {
     title: "Meet Yan Laoshi",
     description:
-      "My name is Yan ZhengYu, but most students just call me Yan. I hold a Master's degree in Education and have taught more than 100 students of different ages in Canada. With over five years of experience teaching Chinese, I currently focus on conversational Chinese for adults, and I also offer HSK preparation and pronunciation training.",
+      "My name is Yan ZhengYu, but most students just call me Yan. I hold a Master's degree in Education and have taught more than 100 students of different ages in Canada. With over five years of experience teaching Chinese, I currently focus on conversational Chinese for adults, and I also offer HSK preparation and pronunciation training. Mainly my classes are held online via Google Meet, however, I do offer in-person classes in Toronto.",
     features: [
       { icon: BookOpen, label: "5+ Years Teaching", desc: "Helping students speak with confidence" },
       { icon: Users, label: "100+ Students Taught", desc: "All ages and backgrounds in Canada" },
