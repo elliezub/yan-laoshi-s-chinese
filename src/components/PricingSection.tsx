@@ -9,7 +9,7 @@ const content = {
     title: "Simple Pricing",
     trial: { label: "Free Trial", price: "$0", duration: "30 minutes", desc: "A relaxed conversation to understand your goals and create your learning plan.", features: ["No commitment", "Personalized assessment", "Custom learning plan"] },
     regular: { label: "One-on-One Lessons", price: "$20", duration: "per hour", desc: "Private, conversation-focused lessons tailored to your level and interests.", features: ["Flexible scheduling", "Personalized curriculum", "Homework & resources"] },
-    bundle: { label: "10-Class Bundle", price: "$180", duration: "$18 per hour · save $20", desc: "Commit to your progress with a discounted package of ten one-on-one lessons.", features: ["10 private lessons", "Best value per hour", "Priority scheduling"], badge: "Best Value" },
+    bundle: { label: "10-Class Bundle", price: "$180", duration: "$18 per hour (save $20)", desc: "Commit to your progress with a discounted package of ten one-on-one lessons.", features: ["10 private lessons", "Best value per hour", "Priority scheduling"], badge: "Best Value" },
     cta: "Book Now",
   },
   zh: {

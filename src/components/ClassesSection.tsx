@@ -7,7 +7,7 @@ interface ClassesProps {
 const content = {
   en: {
     title: "Classes",
-    subtitle: "Stop studying Mandarin. Start speaking it.",
+    subtitle: "Don't just study Mandarin, start speaking it now.",
     cards: [
       { icon: MessageCircle, title: "Conversation Classes", desc: "Speak naturally from day one. Every lesson is built around real dialogue, practical topics, and building the confidence to actually use Mandarin in the real world." },
       { icon: GraduationCap, title: "HSK Exam Prep", desc: "Structured lessons designed around the HSK framework. Work through vocabulary, grammar, and listening skills systematically to hit your target score." },
