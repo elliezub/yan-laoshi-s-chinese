@@ -21,7 +21,7 @@ const Index = () => {
       <VideoSection lang={lang} />
       <ClassesSection lang={lang} />
       <PricingSection lang={lang} />
-      <TestimonialsSection lang={lang} />
+      {/* <TestimonialsSection lang={lang} /> */}
       <ContactSection lang={lang} />
       <CtaSection lang={lang} />
       <Footer lang={lang} />
