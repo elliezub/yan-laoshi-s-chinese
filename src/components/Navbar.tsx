@@ -7,11 +7,11 @@ interface NavbarProps {
 }
 
 const links = {
-  en: ["About", "Classes", "Pricing", "Reviews", "Contact"],
-  zh: ["关于", "课程", "价格", "评价", "联系"],
+  en: ["About", "Classes", "Pricing", "Contact"],
+  zh: ["关于", "课程", "价格", "联系"],
 };
 
-const ids = ["about", "classes", "pricing", "reviews", "contact"];
+const ids = ["about", "classes", "pricing", "contact"];
 
 const Navbar = ({ lang, onToggleLang }: NavbarProps) => {
   const [open, setOpen] = useState(false);
