@@ -42,15 +42,7 @@ const ContactSection = ({ lang }: ContactProps) => {
               {t.subtitle}
             </p>
 
-            <ul className="flex flex-col gap-3 mb-8 text-left w-fit mx-auto">
-              {t.perks.map(({ icon: Icon, text }, i) => (
-                <li key={i} className="flex items-center gap-3 text-sm text-foreground">
-                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center">
-                    <Icon className="w-4 h-4" />
-                  </span>
-                  {text}
-                </li>
-              ))}
+            <ul className="hidden">
             </ul>
 
             <a
