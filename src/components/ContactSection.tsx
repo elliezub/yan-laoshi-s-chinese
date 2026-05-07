@@ -41,10 +41,6 @@ const ContactSection = ({ lang }: ContactProps) => {
             <p className="text-muted-foreground mb-8 max-w-md mx-auto">
               {t.subtitle}
             </p>
-
-            <ul className="hidden">
-            </ul>
-
             <a
               href={FORM_URL}
               target="_blank"
