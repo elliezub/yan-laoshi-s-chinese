@@ -18,7 +18,7 @@ const Index = () => {
       <Navbar lang={lang} onToggleLang={() => setLang(lang === "en" ? "zh" : "en")} />
       <HeroSection lang={lang} />
       <AboutSection lang={lang} />
-      <VideoSection lang={lang} />
+      {/* <VideoSection lang={lang} /> */}
       <ClassesSection lang={lang} />
       <PricingSection lang={lang} />
       {/* <TestimonialsSection lang={lang} /> */}
