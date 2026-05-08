@@ -33,7 +33,7 @@ const PricingSection = ({ lang }: PricingProps) => {
           {/* Trial */}
           <div className="bg-card rounded-xl p-8 border border-border shadow-sm flex flex-col">
             <p className="text-sm font-semibold text-primary uppercase tracking-wide">{t.trial.label}</p>
-            <p className="mt-4 text-4xl font-bold text-foreground">{t.trial.price}</p>
+            <p className="mt-4 text-4xl font-bold text-foreground">{t.trial.price}<span className="text-sm font-medium text-muted-foreground ml-1">USD</span></p>
             <p className="text-muted-foreground text-sm">{t.trial.duration}</p>
             <p className="mt-4 text-muted-foreground text-sm">{t.trial.desc}</p>
             <ul className="mt-6 space-y-2 text-left flex-1">
@@ -51,7 +51,7 @@ const PricingSection = ({ lang }: PricingProps) => {
           {/* Regular */}
           <div className="bg-card rounded-xl p-8 border border-border shadow-sm flex flex-col">
             <p className="text-sm font-semibold text-primary uppercase tracking-wide">{t.regular.label}</p>
-            <p className="mt-4 text-4xl font-bold text-foreground">{t.regular.price}</p>
+            <p className="mt-4 text-4xl font-bold text-foreground">{t.regular.price}<span className="text-sm font-medium text-muted-foreground ml-1">USD</span></p>
             <p className="text-muted-foreground text-sm">{t.regular.duration}</p>
             <p className="mt-4 text-muted-foreground text-sm">{t.regular.desc}</p>
             <ul className="mt-6 space-y-2 text-left flex-1">
@@ -72,7 +72,7 @@ const PricingSection = ({ lang }: PricingProps) => {
               {t.bundle.badge}
             </span>
             <p className="text-sm font-semibold uppercase tracking-wide opacity-90">{t.bundle.label}</p>
-            <p className="mt-4 text-4xl font-bold">{t.bundle.price}</p>
+            <p className="mt-4 text-4xl font-bold">{t.bundle.price}<span className="text-sm font-medium opacity-80 ml-1">USD</span></p>
             <p className="text-sm opacity-80">{t.bundle.duration}</p>
             <p className="mt-4 text-sm opacity-80">{t.bundle.desc}</p>
             <ul className="mt-6 space-y-2 text-left flex-1">
