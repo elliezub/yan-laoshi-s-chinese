@@ -29,7 +29,7 @@ const PricingSection = ({ lang }: PricingProps) => {
       <div className="container max-w-6xl text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12">{t.title}</h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {/* Trial */}
           <div className="bg-card rounded-xl p-8 border border-border shadow-sm flex flex-col">
             <p className="text-sm font-semibold text-primary uppercase tracking-wide">{t.trial.label}</p>
