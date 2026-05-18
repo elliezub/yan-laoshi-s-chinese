@@ -66,7 +66,7 @@ const PricingSection = ({ lang }: PricingProps) => {
             </a>
           </div>
 
-          {/* Bundle */}
+          {/* Bundle — hidden for now
           <div className="relative bg-primary rounded-xl p-8 border border-primary shadow-lg text-primary-foreground flex flex-col">
             <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-background text-primary text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full border border-primary shadow-sm">
               {t.bundle.badge}
@@ -86,6 +86,7 @@ const PricingSection = ({ lang }: PricingProps) => {
               {t.cta}
             </a>
           </div>
+          */}
         </div>
       </div>
     </section>
