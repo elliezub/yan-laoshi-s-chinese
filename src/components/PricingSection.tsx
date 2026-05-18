@@ -29,7 +29,7 @@ const PricingSection = ({ lang }: PricingProps) => {
       <div className="container max-w-6xl text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12">{t.title}</h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {/* Trial */}
           <div className="bg-card rounded-xl p-8 border border-border shadow-sm flex flex-col">
             <p className="text-sm font-semibold text-primary uppercase tracking-wide">{t.trial.label}</p>
@@ -66,7 +66,7 @@ const PricingSection = ({ lang }: PricingProps) => {
             </a>
           </div>
 
-          {/* Bundle */}
+          {/* Bundle — hidden for now
           <div className="relative bg-primary rounded-xl p-8 border border-primary shadow-lg text-primary-foreground flex flex-col">
             <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-background text-primary text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full border border-primary shadow-sm">
               {t.bundle.badge}
@@ -86,6 +86,7 @@ const PricingSection = ({ lang }: PricingProps) => {
               {t.cta}
             </a>
           </div>
+          */}
         </div>
       </div>
     </section>
