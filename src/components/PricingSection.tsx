@@ -31,7 +31,7 @@ const PricingSection = ({ lang }: PricingProps) => {
 
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {/* Trial */}
-          <div className="bg-card rounded-xl p-8 border border-border shadow-sm flex flex-col">
+          <div className="bg-blue-50/60 rounded-xl p-8 border border-blue-100 shadow-md flex flex-col">
             <p className="text-sm font-semibold text-primary uppercase tracking-wide">{t.trial.label}</p>
             <p className="mt-4 text-4xl font-bold text-foreground">{t.trial.price}<span className="text-sm font-medium text-muted-foreground ml-1">USD</span></p>
             <p className="text-muted-foreground text-sm">{t.trial.duration}</p>
@@ -49,7 +49,7 @@ const PricingSection = ({ lang }: PricingProps) => {
           </div>
 
           {/* Regular */}
-          <div className="bg-card rounded-xl p-8 border border-border shadow-sm flex flex-col">
+          <div className="bg-blue-50/60 rounded-xl p-8 border border-blue-100 shadow-md flex flex-col">
             <p className="text-sm font-semibold text-primary uppercase tracking-wide">{t.regular.label}</p>
             <p className="mt-4 text-4xl font-bold text-foreground">{t.regular.price}<span className="text-sm font-medium text-muted-foreground ml-1">USD</span></p>
             <p className="text-muted-foreground text-sm">{t.regular.duration}</p>
