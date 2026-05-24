@@ -1,0 +1,11 @@
+# Learn Chinese with Yan
+
+> Online Chinese tutor and Mandarin tutor based in Toronto. 1-on-1 lessons in conversational Chinese, HSK exam prep, pronunciation, and Chinese culture.
+
+Yan Zhengyu (Yan Laoshi) teaches Mandarin Chinese online worldwide and in person in Toronto, Canada. Lessons focus on real conversation, pronunciation, and cultural context for learners of all levels. New students can book a free 30-minute trial lesson; regular 1-on-1 lessons are $20/hour.
+
+## Pages
+- [Home](/): Overview of Yan's teaching, approach, pricing, testimonials, and booking.
+
+## Optional
+- [Sitemap](/sitemap.xml): Machine-readable list of public pages.
