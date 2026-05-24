@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yanlaoshi-learn-connect.lovable.app/sitemap.xml
+Sitemap: https://learnchinesewithyan.com/sitemap.xml
