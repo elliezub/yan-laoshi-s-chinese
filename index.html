@@ -29,42 +29,56 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "@id": "https://learnchinesewithyan.com/#business",
-      "name": "Learn Chinese with Yan",
-      "image": "https://learnchinesewithyan.com/og-image.png",
-      "url": "https://learnchinesewithyan.com",
-      "description": "Online Chinese tutor and Mandarin tutor in Toronto offering 1-on-1 lessons in conversational Chinese, HSK exam prep, and pronunciation.",
-      "priceRange": "$",
-      "areaServed": [
-        { "@type": "City", "name": "Toronto" },
-        { "@type": "Country", "name": "Canada" },
-        { "@type": "Place", "name": "Worldwide (online)" }
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Toronto",
-        "addressRegion": "ON",
-        "addressCountry": "CA"
-      },
-      "founder": {
-        "@type": "Person",
-        "name": "Yan Zhengyu",
-        "jobTitle": "Mandarin Chinese Tutor",
-        "alumniOf": "Mount Saint Vincent University"
-      },
-      "makesOffer": [
+      "@graph": [
         {
-          "@type": "Offer",
-          "name": "Free 30-minute trial Mandarin lesson",
-          "price": "0",
-          "priceCurrency": "USD"
+          "@type": ["LocalBusiness", "EducationalOrganization"],
+          "@id": "https://learnchinesewithyan.com/#business",
+          "name": "Learn Chinese with Yan",
+          "image": "https://learnchinesewithyan.com/og-image.png",
+          "url": "https://learnchinesewithyan.com",
+          "description": "Online Chinese tutor and Mandarin tutor in Toronto offering 1-on-1 lessons in conversational Chinese, HSK exam prep, and pronunciation.",
+          "priceRange": "$",
+          "areaServed": [
+            { "@type": "City", "name": "Toronto" },
+            { "@type": "Country", "name": "Canada" },
+            { "@type": "Place", "name": "Worldwide (online)" }
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Toronto",
+            "addressRegion": "ON",
+            "addressCountry": "CA"
+          },
+          "founder": { "@id": "https://learnchinesewithyan.com/#yan" },
+          "makesOffer": [
+            { "@type": "Offer", "name": "Free 30-minute trial Mandarin lesson", "price": "0", "priceCurrency": "USD" },
+            { "@type": "Offer", "name": "1-on-1 Online Mandarin Lesson", "price": "20", "priceCurrency": "USD" }
+          ]
         },
         {
-          "@type": "Offer",
-          "name": "1-on-1 Online Mandarin Lesson",
-          "price": "20",
-          "priceCurrency": "USD"
+          "@type": "Person",
+          "@id": "https://learnchinesewithyan.com/#yan",
+          "name": "Yan Zhengyu",
+          "jobTitle": "Mandarin Chinese Tutor",
+          "alumniOf": "Mount Saint Vincent University"
+        },
+        {
+          "@type": "Service",
+          "name": "Conversational Mandarin Lessons",
+          "provider": { "@id": "https://learnchinesewithyan.com/#business" },
+          "areaServed": "Worldwide"
+        },
+        {
+          "@type": "Service",
+          "name": "HSK Exam Preparation",
+          "provider": { "@id": "https://learnchinesewithyan.com/#business" },
+          "areaServed": "Worldwide"
+        },
+        {
+          "@type": "Service",
+          "name": "Mandarin Pronunciation Coaching",
+          "provider": { "@id": "https://learnchinesewithyan.com/#business" },
+          "areaServed": "Worldwide"
         }
       ]
     }
