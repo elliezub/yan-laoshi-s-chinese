@@ -32,8 +32,9 @@ const PricingSection = ({ lang }: PricingProps) => {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {/* Trial */}
           <div className="bg-blue-50/60 rounded-xl p-8 border border-blue-100 shadow-md flex flex-col">
-            <p className="text-sm font-semibold text-primary uppercase tracking-wide">{t.trial.label}</p>
-            <p className="mt-4 text-4xl font-bold text-foreground">{t.trial.price}<span className="text-sm font-medium text-muted-foreground ml-1">USD</span></p>
+            <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">{t.trial.label}</p>
+            <p className="text-sm text-muted-foreground">{t.trial.introCall}</p>
+            <p className="mt-1 text-4xl font-bold text-foreground">{t.trial.price}<span className="text-sm font-medium text-muted-foreground ml-1">USD</span></p>
             <p className="text-muted-foreground text-sm">{t.trial.duration}</p>
             <p className="mt-4 text-muted-foreground text-sm">{t.trial.desc}</p>
             <ul className="mt-6 space-y-2 text-left flex-1">
