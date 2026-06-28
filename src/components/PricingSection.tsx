@@ -51,7 +51,8 @@ const PricingSection = ({ lang }: PricingProps) => {
           {/* Regular */}
           <div className="bg-blue-50/60 rounded-xl p-8 border border-blue-100 shadow-md flex flex-col">
             <p className="text-sm font-semibold text-primary uppercase tracking-wide">{t.regular.label}</p>
-            <p className="mt-4 text-4xl font-bold text-foreground">{t.regular.price}<span className="text-sm font-medium text-muted-foreground ml-1">USD</span></p>
+            <p className="mt-1 text-xs text-muted-foreground">{t.regular.startingAt}</p>
+            <p className="mt-1 text-4xl font-bold text-foreground">{t.regular.price}<span className="text-sm font-medium text-muted-foreground ml-1">USD</span></p>
             <p className="text-muted-foreground text-sm">{t.regular.duration}</p>
             <p className="mt-4 text-muted-foreground text-sm">{t.regular.desc}</p>
             <ul className="mt-6 space-y-2 text-left flex-1">
