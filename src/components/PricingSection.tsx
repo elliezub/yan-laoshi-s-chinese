@@ -7,14 +7,14 @@ interface PricingProps {
 const content = {
   en: {
     title: "Simple Pricing",
-    trial: { label: "Free Trial", price: "$0", duration: "30 minutes", desc: "A relaxed conversation to understand your goals and create your learning plan.", features: ["No commitment", "Personalized assessment", "Custom learning plan"] },
+    trial: { label: "Free Trial", introCall: "Intro Call", price: "$0", duration: "30 minutes", desc: "A relaxed conversation to understand your goals and create your learning plan.", features: ["No commitment", "Personalized assessment", "Custom learning plan"] },
     regular: { label: "One-on-One Lessons", price: "$25", startingAt: "Starting at", duration: "per hour", desc: "Private, conversation-focused lessons tailored to your level and interests.", features: ["Flexible scheduling", "Personalized curriculum", "Homework & resources"] },
     bundle: { label: "10-Class Bundle", price: "$180", duration: "$18 per hour (save $20)", desc: "Commit to your progress with a discounted package of ten one-on-one lessons.", features: ["10 private lessons", "Best value per hour", "Priority scheduling"], badge: "Best Value" },
     cta: "Book Now",
   },
     zh: {
     title: "简单透明的价格",
-    trial: { label: "免费试听", price: "$0", duration: "30分钟", desc: "轻松对话，了解您的目标并制定学习计划。", features: ["无需承诺", "个性化评估", "定制学习计划"] },
+    trial: { label: "免费试听", introCall: "试听介绍", price: "$0", duration: "30分钟", desc: "轻松对话，了解您的目标并制定学习计划。", features: ["无需承诺", "个性化评估", "定制学习计划"] },
     regular: { label: "一对一课程", price: "$25", startingAt: "起价", duration: "每小时", desc: "针对您的水平和兴趣量身定制的对话式私人课程。", features: ["灵活安排时间", "个性化课程", "作业和资源"] },
     bundle: { label: "10节课套餐", price: "$180", duration: "每小时 $18（节省 $20）", desc: "通过十节一对一课程的优惠套餐，坚定您的学习进度。", features: ["10节私人课程", "最优惠的小时价格", "优先安排时间"], badge: "超值优选" },
     cta: "立即预约",
@@ -32,8 +32,9 @@ const PricingSection = ({ lang }: PricingProps) => {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {/* Trial */}
           <div className="bg-blue-50/60 rounded-xl p-8 border border-blue-100 shadow-md flex flex-col">
-            <p className="text-sm font-semibold text-primary uppercase tracking-wide">{t.trial.label}</p>
-            <p className="mt-4 text-4xl font-bold text-foreground">{t.trial.price}<span className="text-sm font-medium text-muted-foreground ml-1">USD</span></p>
+            <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">{t.trial.label}</p>
+            <p className="text-sm text-muted-foreground">{t.trial.introCall}</p>
+            <p className="mt-1 text-4xl font-bold text-foreground">{t.trial.price}<span className="text-sm font-medium text-muted-foreground ml-1">USD</span></p>
             <p className="text-muted-foreground text-sm">{t.trial.duration}</p>
             <p className="mt-4 text-muted-foreground text-sm">{t.trial.desc}</p>
             <ul className="mt-6 space-y-2 text-left flex-1">
@@ -50,8 +51,8 @@ const PricingSection = ({ lang }: PricingProps) => {
 
           {/* Regular */}
           <div className="bg-blue-50/60 rounded-xl p-8 border border-blue-100 shadow-md flex flex-col">
-            <p className="text-sm font-semibold text-primary uppercase tracking-wide">{t.regular.label}</p>
-            <p className="mt-1 text-xs text-muted-foreground">{t.regular.startingAt}</p>
+            <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">{t.regular.label}</p>
+            <p className="text-sm text-muted-foreground">{t.regular.startingAt}</p>
             <p className="mt-1 text-4xl font-bold text-foreground">{t.regular.price}<span className="text-sm font-medium text-muted-foreground ml-1">USD</span></p>
             <p className="text-muted-foreground text-sm">{t.regular.duration}</p>
             <p className="mt-4 text-muted-foreground text-sm">{t.regular.desc}</p>
